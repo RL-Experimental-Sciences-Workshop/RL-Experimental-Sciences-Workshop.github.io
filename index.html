@@ -1368,7 +1368,39 @@ target.scrollIntoView({behavior:"smooth"});
 });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector("#accepted-papers");
+  if (!section) return;
+
+  const details = [...section.querySelectorAll(".paper-abstract")];
+
+  if (!details.length) return;
+
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "paper-link";
+  toggle.textContent = "Expand all abstracts";
+  toggle.style.cursor = "pointer";
+  toggle.style.marginTop = "24px";
+
+  toggle.addEventListener("click", () => {
+    const expand = details.some(item => !item.open);
+
+    details.forEach(item => {
+      item.open = expand;
+    });
+
+    toggle.textContent = expand
+      ? "Collapse all abstracts"
+      : "Expand all abstracts";
+  });
+
+  const firstCategory = section.querySelector(".paper-category");
+  firstCategory?.before(toggle);
+});
 </script>
+
 
 </body>
 </html>
