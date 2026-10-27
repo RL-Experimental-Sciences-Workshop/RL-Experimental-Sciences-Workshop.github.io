@@ -292,6 +292,196 @@ color:var(--muted);
 header h1{font-size:2rem}
 }
 
+
+
+/* ACCEPTED PAPERS */
+#accepted-papers {
+  background: var(--bg);
+}
+
+.paper-category {
+  margin: 48px 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.paper-category h4 {
+  font-size: 1.55rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+.category-count {
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: #e4eadf;
+  border-radius: 30px;
+  padding: 5px 12px;
+}
+
+.category-description {
+  color: var(--muted);
+  margin: -12px 0 24px;
+}
+
+/* One paper per row */
+.paper-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.paper-card {
+  background: var(--card);
+  border: 1px solid rgba(53, 94, 59, .16);
+  border-radius: 16px;
+  padding: 26px 30px;
+  box-shadow: 0 5px 18px rgba(35, 48, 31, .045);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.paper-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(35, 48, 31, .09);
+}
+
+.paper-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.paper-badge {
+  display: inline-block;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px 9px;
+}
+
+.paper-badge.spotlight {
+  background: var(--primary);
+  color: white;
+}
+
+.paper-badge.poster {
+  background: #eee5d4;
+  color: #665034;
+}
+
+.paper-number {
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+.paper-title {
+  color: var(--primary);
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.paper-authors {
+  font-size: .93rem;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.paper-authors strong {
+  color: var(--text);
+}
+
+.paper-abstract {
+  border-top: 1px solid rgba(100, 116, 87, .18);
+  padding-top: 15px;
+}
+
+.paper-abstract summary {
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: .94rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.paper-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-abstract summary::after {
+  content: "+";
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.paper-abstract[open] summary::after {
+  content: "−";
+}
+
+.paper-abstract p {
+  margin-top: 14px;
+  font-size: .96rem;
+  line-height: 1.75;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.paper-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--primary);
+  border: 1px solid rgba(53, 94, 59, .3);
+  border-radius: 7px;
+  padding: 8px 13px;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+
+.paper-link:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.paper-divider {
+  border: 0;
+  border-top: 1px solid rgba(100, 116, 87, .2);
+  margin: 55px 0 35px;
+}
+
+@media (max-width: 600px) {
+  .paper-card {
+    padding: 20px;
+  }
+
+  .paper-title {
+    font-size: 1.13rem;
+  }
+
+  .paper-topline {
+    align-items: flex-start;
+  }
+}
+	
+
 </style>
 </head>
 
@@ -724,6 +914,162 @@ This workshop brings together researchers from reinforcement learning and experi
 
 </div>
 </section>
+
+
+
+	
+<section id="accepted-papers">
+  <div class="containerb">
+
+    <h3 class="section-title">Accepted Papers</h3>
+
+    <p class="lead">
+      We are pleased to present the accepted contributions to the
+      workshop on Reinforcement Learning for Experimental Sciences.
+      Spotlight papers feature the highest-ranked contributions,
+      followed by the poster presentations.
+    </p>
+
+    <!-- SPOTLIGHT PAPERS -->
+    <div class="paper-category">
+      <h4>Spotlight Papers</h4>
+      <span class="category-count">11 papers</span>
+    </div>
+
+    <p class="category-description">
+      Selected contributions presented as spotlight talks.
+    </p>
+
+    <div class="paper-list">
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">01</span>
+        </div>
+
+        <h5 class="paper-title">
+          Beyond Reduced-Order Control: Physics-Guided Nine-DOF
+          Rollouts for Wave-Energy RL
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Wave energy is a substantial renewable resource, but
+            commercial devices must extract energy competitively
+            under changing waves. For the coupled D-Spar converter,
+            this creates two linked problems: predicting nonlinear
+            device motion accurately and choosing power-take-off
+            (PTO) damping quickly enough for control. High-fidelity
+            numerical models retain coupled motion, radiation memory
+            and nonlinear forces, but are expensive to evaluate
+            repeatedly. Rather than further reducing the device
+            dynamics, we learn the expensive nonlinear-force
+            correction inside the full nine-degree-of-freedom model.
+            The remaining excitation, radiation, mechanics, PTO and
+            RK4 calculations stay explicit. On development data,
+            a free-recursive 10-s forecast obtains 0.382% macro NRMSE
+            over all displacement and velocity channels. A rank-5
+            proper orthogonal decomposition (POD5) decoder then
+            reconstructs a 15-action damping–energy curve from only
+            three rollouts, with 0.202% RMS-relative curve error,
+            100/110 exact sampled optima, exact-or-adjacent selection
+            in every case and 0.0596% maximum regret. The complete
+            measured K3+POD5 controller is not yet 10-Hz real time.
+            Residual RL benefits from POD context but remains 0.606%
+            below greedy. By contrast, exact two-wave sequence MPC
+            gains 4.21% over matched wave-synchronous greedy and
+            3.57% over canonical 10-Hz greedy across three development
+            seeds, while losing on one seed. These perfect-preview
+            results motivate learning a compact wave-level policy
+            from the MPC value landscape; they do not yet establish
+            RL superiority, unseen-seed performance or real-time
+            deployment.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=zWVhx48pWA"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+          Autonomous Focusing of a Capillary Optic for
+          Angle-Resolved Photoemission Spectroscopy
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Low-dimensional optimization problems in complex
+            experimental environments are common and often take the
+            form of black-box optimization problems. We present a
+            protocol for automated alignment of a capillary optic
+            that focuses extreme-ultraviolet light for angle-resolved
+            photoemission spectroscopy (ARPES). This alignment is a
+            demanding procedure typically performed by expert
+            beamline scientists and is generally inaccessible to
+            non-expert users. In spatially resolved ARPES, a small
+            beam spot is essential for measurements of challenging
+            materials and functional devices. We compare several
+            optimization methods in simulations based on experimental
+            data and demonstrate successful automated focusing in
+            experiments at the SGM4 microARPES beamline of the
+            ASTRID2 synchrotron radiation source in Aarhus.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Add papers 03–11 here, using the same article structure. -->
+
+    </div>
+
+    <hr class="paper-divider">
+
+    <!-- POSTER PAPERS -->
+    <div class="paper-category">
+      <h4>Poster Papers</h4>
+      <span class="category-count">To be announced</span>
+    </div>
+
+    <p class="category-description">
+      Accepted contributions presented in the poster session.
+    </p>
+
+    <div class="paper-list" id="poster-paper-list">
+      <!-- Add poster papers here when their acceptance is finalized. -->
+    </div>
+
+  </div>
+</section>
+
 
 <footer>
 Workshop on Reinforcement Learning for Experimental Sciences · Neurips Conference 2026
