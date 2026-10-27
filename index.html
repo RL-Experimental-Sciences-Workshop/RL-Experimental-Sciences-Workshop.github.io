@@ -1049,6 +1049,289 @@ This workshop brings together researchers from reinforcement learning and experi
 
       <!-- Add papers 03–11 here, using the same article structure. -->
 
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+           WSI-Lab: A Pathologist-Inspired, High-Throughput RL Environment for Sequential Whole-Slide Analysis        
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Whole-slide images (WSIs) are gigapixel digital pathology slides where sparse diagnostic evidence makes exhaustive high-magnification inspection computationally expensive. 
+			  Pathologists instead examine selected regions across magnifications, retain global context and examination history, update their assessment as evidence accumulates, 
+			  and decide where to look next and when to stop. This naturally frames WSI examination as a partially observable sequential decision problem, 
+			  for which reinforcement learning (RL) provides a principled framework to learn observation, navigation, and stopping policies. 
+			  Existing RL and adaptive-sampling methods largely provide task-specific solutions, while existing environments expose limited examination states that do not reflect the richer information available to a pathologist during sequential slide examination and can be costly to execute at RL scale. We introduce WSI-Lab, a reusable, Gymnasium-compatible, pathologist-inspired environment combining the current viewport, global slide context, location and examination history, and an evolving machine diagnostic-belief estimate from acquired evidence. Agents navigate across magnifications and terminate with an explicit diagnosis. Tissue-aware preprocessing, precomputed navigation structures, caching, and efficient state updates reduce repeated online work. RL ablations show that WSI-Lab's complete examination state, tissue-aware navigation, and explicit diagnosis actions support substantially stronger training than reduced variants. Under matched environment workloads, WSI-Lab is additionally up to 2.24x faster while exposing a logical observation payload up to 10.7x larger than existing environments. 
+			  Code is available at https://anonymous.4open.science/r/wsi-lab-0EEC/.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+          Generative Language Modeling for Antibody CDR Grafting and Alignment
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Antibodies recognise their targets through hypervariable complementarity-determining regions (CDRs), which are interleaved with conserved frameworks in sequence space, making *de novo* CDR design an infilling problem. Autoregressive models generate residues left-to-right, which precludes full framework context during CDR generation and conflates framework and CDR likelihoods, leaving no natural prompt–response interface for feedback to steer generation. We present GenCDR, a family of LLaMa-based autoregressive language models that read all frameworks as a conditioning prompt and generate all CDRs jointly as a variable-length response, making CDR likelihoods a clean, separable target for reward attribution. The family comprises *IgGenCDR*, *p-IgGenCDR*, and *NanoGenCDR*, trained on unpaired, paired, and nanobody chains, respectively. GenCDR achieves the highest CDR recovery among autoregressive models and produces natural, diverse, human-like CDRs whose likelihoods correlate with fitness and developability assays. The prompt–response boundary also enables principled alignment: reward signals for binding affinity, expression, or developability can be composed to steer CDR generation. Over four rounds of alignment against antibody–antigen co-folding and developability objectives, we find that NanoGenCDR can reach *in silico* structural interface metrics competitive with those of a structure-conditioned diffusion pipeline at roughly half the sampling budget, with more natural, developable designs. The same interface can be extended to integrate experimental feedback, opening a path to closed-loop antibody *de novo* design.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+         MARL-based System Optimization for Wildfire Sensing Networks
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Terrestrial-based systems for early wildfire detection often use cameras deployed in remote environments, where images from these cameras are routed through the network and processed by ML models. However, determining an optimal policy for how to route and process collected images is challenging due to highly variable energy availability and network capacity at the edge. Existing methods typically adopt static approaches for determining such policies. They also rely on centralized execution, introducing a potential single point of failure. Multi-agent reinforcement learning (MARL) provides an attractive alternative. However, learned policy performance for MARL-based solutions is dependent on the quality of reward modeling, environment diversity, re-start strategies, and reward credit assignment, all of which can be difficult to define and if done poorly can lead to inconsistent and sub-optimal performance in live deployments. To address these challenges, we propose MARL-based System Optimization for Wildfire Sensing Networks (MARL-OptWSN), a framework for optimizing highly variable image-based wildfire sensing networks. MARL-OptWSN uses a custom training regime built around a Gurobi-based oracle, while leveraging decentralized execution to improve resilience and adapt to changing environmental conditions. Our training approach combines progressive training, oracle guidance, and an agent-specific blame system that identifies decisions responsible for poor outcomes. Empirical experiments show that our approach achieves near-oracle performance with substantially lower decision time, while retaining resilience under highly variable and constrained conditions that negatively affect centralized approaches.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+          MA-BED: Coordinating Multiple Actors in Bayesian Experimental Design
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+           To date, Bayesian experimental design (BED) has largely studied how a single adaptive policy should choose experiments. Yet many real-world data-acquisition systems distribute experimental capacity across multiple actors, such as laboratories, field teams, or decentralised robots. We introduce multi-actor Bayesian experimental design (MA-BED) as a general paradigm for BED in which experimental decisions are distributed across multiple actors, and within this paradigm focus on a fully cooperative setting with decentralised execution. In this regime, actors share an inferential objective but choose experiments using only their local histories, creating a coordination problem: individually informative policies may collectively acquire redundant information. We formalise this failure through an information-theoretic coordination gap and show that, under conditionally independent acquisition, it is exactly characterised by the total correlation among actor histories. To address this problem, we adapt centralised training with decentralised execution (CTDE) to BED, jointly optimising locally executable policies against the information contained in their pooled experimental histories. We instantiate this framework with DAD-based algorithms trained using a contrastive information objective. Empirically, joint training reduces coordination failure, induces greater actor specialisation under heterogeneous experimental costs, and outperforms independently trained policies without requiring communication at execution. These results establish coordination as an important challenge in Bayesian experimental design when data acquisition is distributed across multiple actors.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+          Constrained sample efficient reinforcement learning for heavy ion accumulation in the Low Energy Ion Ring
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            The Low Energy Ion Ring (LEIR) at CERN turns long lead-ion pulses from Linac3 into the dense bunches required by the Large Hadron Collider's (LHC) high intensity ion program. It accumulates successive multi-turn injections through six-dimensional phase space painting under electron cooling. The accumulated intensity depends sensitively on nine parameters, and the optimum drifts on every relevant timescale: continuously, as the stripper foil that produces the injected charge state ages, and discontinuously, as the machine is recommissioned every yearly campaign or after critical hardware faults. In this paper, we describe an operational Reinforcement Learning (RL) pipeline deployed on LEIR that treats this drift as the central design constraint and outperforms routine operational performance by more than 10\%. Using four years of archived operational data and system identification between 2023 and 2026, we first quantify the drift: generative topographic maps of the nine-dimensional setting space show that both the sampled region and the high-efficiency region move from year to year, and surrogate models fitted on one campaign transfer to the next with near zero rank correlation. We then show how to choose a low-dimensional observation robust to drift: a joint denoising autoencoder with physics-informed auxiliary heads, benchmarked against variational, quantized, and joint embedding alternatives under measured acquisition noise, compresses $\sim$136\,000 bin longitudinal Schottky spectrograms into nine latents that remain informative across campaigns. Policies are trained on per-year heteroscedastic ensemble digital twins and deployed by warm finetuning on the machine: relocking to a new campaign takes a few hundred machine cycles (1 to 2 dedicated hours of training), $\approx$33$\times$ fewer than training from scratch. Finally, exploration is framed as a constrained Markov Decision Process (MDP) with a learned, per-campaign vacuum risk cost: with a fixed Lagrange multiplier the constrained agent explores an order of magnitude more safely than its unconstrained ancestor.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+          Heteroscedastic Gaussian Process Q-learning for Sample-Efficient Experimentation
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            In process experimentation, chemical reactors, and  bioprocesses, reinforcement learning agents may only have access to a few hundred trajectories. Each is a real experiment and therefore, the employed algorithm must use them efficiently. Furthermore, any tuning of algorithm hyperparameters can further waste experimental budget. Standard neural Q-learning offers no closed-form uncertainty estimates, and requires additional tuning to achieve satisfactory performance. Non-parametric alternatives can improve sample-efficiency through improved function approximation, however existing methods either fix a constant step or target exploration regret. We propose Heteroscedastic Gaussian Process Q-learning (HGPQ): a closed-form Bayesian gain, obtained by projecting both moments of the value posterior under the distributional Bellman operator, replaces the scalar learning rate of prior Gaussian Process Q-learning, with a heteroscedastic variance update making the gain itself state-action-dependent. Under a fixed, small interaction budget across chemical process-control and biological-growth case studies, we compare HGPQ against specialized low-data RL algorithms and standard vanilla RL algorithms. HGPQ matches or improves on every low-data comparator, and deep actor-critic algorithm.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=sPnAlq09io"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+          Batch-to-Streaming Deep Reinforcement Learning for Continuous Control
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            State-of-the-art deep reinforcement learning (RL) methods have achieved remarkable performance in continuous control tasks, yet their computational complexity is often incompatible with the constraints of resource-limited hardware, due to their reliance on replay buffers, batch updates, and target networks. The emerging paradigm of streaming deep RL addresses this limitation through purely online updates. Existing streaming methods, however, are studied in isolation, trained from scratch until convergence, whereas on-device learning is most useful as a continuation of a pre-trained policy. In this work, we propose two novel streaming deep RL algorithms, Streaming Soft Actor-Critic (S2AC) and Streaming Deterministic Actor-Critic (SDAC), designed as streaming counterparts of SAC and TD3, with performance comparable to state-of-the-art streaming baselines on standard benchmarks. Building on them, we study the batch-to-streaming transition as a problem in its own right: we show that a naive transition can cause a severe and lasting loss of the pre-trained policy, trace the failure to a mismatch between the optimizers used on either side of the switch and show that aligning the optimizers enables streaming deep RL in settings such as Sim2Real.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=tpdHOJWWLF"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+         Dynamic Plasma Shape Control Robust to Diagnostic Dropout
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Plasma shape control in tokamaks requires a real-time controller that tracks dynamically changing shape targets while tolerating diagnostic failures.
+Classical approaches decompose the problem into equilibrium reconstruction followed by a linear controller, and assume a fixed, fully operational sensor set.
+We present a reinforcement learning agent that addresses both limitations simultaneously.
+The agent is trained in NSFsim, a high-fidelity tokamak simulator configured for DIII-D, on a curated dataset of 120 experimental plasma shapes.
+The shape targets are resampled as random step changes every 0.25\,s, exposing the agent to diverse transitions across the full shape envelope.
+At test time the agent zero-shot tracks dynamic shape sequences; on a held-out static configuration in simulation it achieves a mean shape error of 2.01\,cm, and dynamic trajectory following is demonstrated qualitatively in simulation and on the physical device.
+Diagnostic dropout randomly masks 30\% of magnetic sensors per episode, yielding a single policy robust to a distribution of sensor subsets used for tokamak operation, without backup controllers or mode-switching logic.
+An asymmetric actor-critic architecture with privileged equilibrium information improves value estimation under partial observability; an auxiliary shape reconstruction head on the actor enables end-to-end shape reconstruction from raw diagnostics and serves as an interpretability tool for policy analysis.
+The policy transfers to experimental DIII-D shots, where it directly commands the coil actuators on two dynamic shape maneuvers, and to the independent GSevolve simulator.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=ECDaAmPya5"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge spotlight">Spotlight</span>
+          <span class="paper-number">02</span>
+        </div>
+
+        <h5 class="paper-title">
+         In-Context Pure Exploration in Continuous Decision Spaces
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+           In active sequential testing, also termed pure exploration, a learner is tasked with the goal to adaptively acquire information so as to identify an unknown ground-truth hypothesis with as few queries as possible. This problem has several motivating applications, including Best-Arm Identification (BAI) in bandits, where actions index hypotheses, and generalized search problems, where strategically chosen queries reveal partial information about a hidden label. In many modern settings, however, the hypothesis, or recommendation space, is continuous: for example, identifying a near optimal action in a continuous-armed bandit, localizing an $\epsilon$-ball contained in a target region, or estimating the minimizer of a function from noisy observations. Existing methods are predominantly frequentist and model-specific, while learned approaches have been limited to finite recommendation spaces. We introduce C-ICPE, a theory-guided learned model for Bayesian fixed-confidence pure exploration with continuous recommendations. C-ICPE meta-trains sequential architectures over a task prior to jointly learn exploration, stopping and recommendations strategies. At inference time, it actively gathers evidence on tasks and identifies an -optimal recommendation without parameter updates.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=BZFvsOFfMm"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
     </div>
 
     <hr class="paper-divider">
