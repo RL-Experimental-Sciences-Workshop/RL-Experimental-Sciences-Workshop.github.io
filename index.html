@@ -1337,7 +1337,7 @@ The policy transfers to experimental DIII-D shots, where it directly commands th
     <!-- POSTER PAPERS -->
     <div class="paper-category">
       <h4>Poster Papers</h4>
-      <span class="category-count">To be announced</span>
+      <span class="category-count">18 papers</span>
     </div>
 
     <p class="category-description">
@@ -1346,6 +1346,545 @@ The policy transfers to experimental DIII-D shots, where it directly commands th
 
     <div class="paper-list" id="poster-paper-list">
       <!-- Add poster papers here when their acceptance is finalized. -->
+		 <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">52</span>
+        </div>
+
+        <h5 class="paper-title">
+          Paired Significance Testing for Active Experimental Design Comparisons in Wildfire Model Calibration
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Autonomous and adaptive experimentation systems are increasingly proposed for the physical sciences, often on the intuition that choosing which measurement to take next, rather than measuring at random or on a fixed schedule, should make better use of a limited observation budget. This project tests this intuition directly on a physical-parameter calibration problem: a stochastic wildfire simulator with three unknown physical parameters, calibrated from field observations under a fixed budget. This project compares an active, uncertainty-seeking sensing policy against random sampling and a fixed monitoring-grid sweep, evaluating all three on held-out calibration loss, burned-area agreement with the true fire, and parameter-recovery error. An initial run with 5 independent fire draws suggested active sensing had a real edge. A properly-powered rerun with 12 independent fire draws did not reproduce it: none of the three strategies are statistically distinguishable on any of the three metrics (paired Wilcoxon signed-rank test, $p \geq 0.456$ pooled over the full budget sweep). A second scenario with a different wind direction, ignition point, and terrain map does show a significant active-sensing advantage on calibration loss ($p=0.0009$), so the effect is not universally absent, it is scenario-dependent and easy to mistake for a general property of the method from a single underpowered pilot. This project argues that claims about adaptive experimental design improving physical-parameter calibration should be treated as empirical, checkable questions specific to a deployment scenario, not assumed a prior, and it reports the initial false positive as a worked example of why.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=bU7TbyCQO7"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">45</span>
+        </div>
+
+        <h5 class="paper-title">
+          Bandit Simulation for Average Reward Inference
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Multi-arm bandit algorithms are increasingly used in online platforms, clinical trials, and social science experiments, but valid statistical inference on their performance remains an open challenge. After deploying bandits, a natural question is whether one can construct a confidence interval for its mean reward and assess whether it reliably outperforms a baseline policy. More broadly, one may wish to assess a new candidate algorithm's expected reward before committing to deployment. Standard inference methods break down because bandit algorithms introduce complex dependencies in the collected data, leading to inflated Type-I error. Moreover, existing inference methods for bandit data only apply to estimands such as the mean reward under a fixed action, which do not depend on the data-collection algorithm. We propose Bandit Simulation for Inference (BSI), a framework that fits a simulator of the bandit environment from on- or off-policy data and uses it to estimate the mean reward under any evaluation policy, including adaptive blackbox algorithms. BSI formally propagates simulator estimation error into the confidence interval construction, requires only weak exploration assumptions on the behavior policy, and avoids importance weighting. We prove that BSI yields asymptotically valid confidence intervals, and demonstrate empirically that it maintains nominal coverage in settings where standard off-policy evaluation methods fail.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=pCmyrTKaKn"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">41</span>
+        </div>
+
+        <h5 class="paper-title">
+          From Learned Values to Simple Rules: RL-Guided Strategy Discovery in Food Production
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Food factories rely on fixed operating procedures because they are stable andeasy to audit. These procedures work well in normal production, but they canreact slowly to rare contamination events. We study whether reinforcementlearning can find when a factory should clean earlier. Our simulator follows areported factory practice of 18 hours of production followed by six hours ofcleaning. It also includes hidden failures, noisy sensor readings, and delayedtests. The current procedure earns a steady profit in normal operation, butloses an average of 3,276 dollars in a simulated crisis. We use simulated futureoutcomes to learn the value of cleaning after an alarm. The learned policyreduces crisis loss by 182 dollars compared with a strong two-alarm rule whilepreserving routine profit. The learned values also point to a simplestrategy: clean after the first strong alarm. On new simulations, this rulereduces crisis loss by 586 dollars and gains 5.83 dollars per day. The main lesson is notthat learning should replace the factory procedure. It is that learning canhelp find a small and useful change to a mature process.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=8e9QDfvTsF"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">40</span>
+        </div>
+
+        <h5 class="paper-title">
+          Correlation-aware reward scalarization for reinforcement learning-guided generative molecular design
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Generative molecular design is often framed as a reinforcement learning (RL) problem in which a policy proposes candidate molecules and is rewarded according to desired properties. Because these properties cannot be measured during generative optimization, they are instead estimated using predictive models, where the reward is typically constructed from multiple in silico molecular property objectives formulated as a multi-parameter optimization (MPO) scalarization. The choice of weights is an important design decision, yet assigning them is difficult: equal weighting implicitly assumes objectives are independent and equally important, and yet drug-discovery objectives are frequently correlated or antagonistic, while manually specified weights rely on expert assumptions that may not reflect statistical dependencies among objectives. We integrate correlation-aware MPO (caMPO), a data-driven scalarization that down-weights redundant objectives, into a molecular scaffold-based RL generator (LibINVENT), recomputing weights online at every optimization step from the molecules generated so far, allowing the reward to adapt to the evolving correlation structure among property objectives. Across 17 scaffolds derived from a public PDE10A dataset, and comparing to a standard equal-weight approach, correlation-aware reward shaping improved property-space quality and alignment with target property profiles, with no significant impact on chemical novelty for both aggregations, and broadened Pareto coverage under arithmetic mean aggregation. These results suggest correlation-aware scalarization may serve as a simple, generator-agnostic reward-design mechanism for RL in experimental molecular science, enabling objective weights to be inferred from data rather than specified manually.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=JjAFgrnS8S"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">39</span>
+        </div>
+
+        <h5 class="paper-title">
+          Curriculum Learning with Internal-State-Aware Reward Allocation for Animal Behavior Shaping
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Training animals to perform complex behavioral tasks is a major bottleneck in systems neuroscience. A common training strategy is shaping: animals begin with easier versions of a task and progress toward the target behavior as their performance improves. This process resembles automated curriculum learning (ACL), where task difficulty is adapted to the learner's performance. Standard ACL formulations, however, typically assume that the learner remains available for continued training. In animal shaping, participation is not guaranteed. Animals may disengage after repeated failures or effortful trials. Reward can help sustain participation, but its motivational value declines with satiety and each session has a finite reward budget. Here, we formulate shaping as a sequential control problem over task difficulty and reward magnitude. Difficulty determines what the animal practices, whereas reward allocation influences whether future training opportunities remain available. We characterize how these decisions should be coordinated using a tractable three-step simulation, then develop a scalable strategy that adapts difficulty from recent performance and reward from the animal's within-session state. Adaptive reward allocation approaches a full-state dynamic-programming benchmark and provides the greatest benefit when declining participation would otherwise shorten training sessions. The same principle reduces sessions to mastery in longer sequential and perceptual-learning tasks. These results establish limited trial availability as a key feature of animal shaping and suggest that efficient training requires managing not only what an animal practices, but also how limited reward is allocated to sustain future learning opportunities.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=Sa70YZnlzu"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">35</span>
+        </div>
+
+        <h5 class="paper-title">
+          Learning to Trace: Zero-Shot Connectivity Repair for Vessel Segmentation via Procedural Reinforcement Learning
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Structured prediction tasks such as tubular segmentation require topology preservation over long-range geometric dependencies. Pixel-wise classification methods are limited in preserving fine-scale connectivity and recovering vascular structure. Connectivity is therefore the property that matters: a segmentation broken into disconnected fragments misrepresents the network even when its pixel overlap is high. Reinforcement learning (RL) offers an alternative by explicitly tracing image geometry, but policies trained without domain adaptation may become overly sensitive to low-level image statistics and generalize poorly under distribution shift. We propose a memory-augmented actor--critic framework that traces tubular structures sequentially, using accumulated trajectory context to resolve local ambiguities. The policy jointly models exploration and branching to reconnect fragmented structures. To enable zero-shot generalization, we train the policy through an adaptive curriculum on synthesized data covering an expansive distribution of noise and geometry.When applied without adaptation to the outputs of a DRIVE-trained segmenter, the policy reduces the number of connected components ($\beta_0$) from 29.1 to 4.5 while recovering vessels missed by the segmenter, increasing centerline recall from 85.8\% to 87.7\% at 94.6\% on-vessel precision. Without retraining or modification, the same policy transfers to ISBI-12 electron-microscopy membranes, despite their distinct appearance and topology, reducing $\beta_0$ from 10.8 to 4.2 while maintaining 94.1\% recall. These results demonstrate that a sequential tracing policy learned entirely from synthetic data can improve topological coherence across substantially different imaging domains.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=NZuAkfqSsw"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">33</span>
+        </div>
+
+        <h5 class="paper-title">
+          Stochastic Decision Horizons for Survival-Based Constrained Reinforcement Learning
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            We propose stochastic decision horizons (SDH), a theoretically grounded framework for survival-based constrained reinforcement learning from per-step violation signals. Rather than treating violations as expenditure of a cumulative budget, SDH shortens the effective decision horizon when violations occur, reducing current reward credit and future bootstrapping. We show that this construction represents a geometric-horizon survival constraint and, for a fixed Lagrange multiplier, remains the same SDH problem up to a constant reward offset that acts as an implicit incentive for survival. Using control as inference, we derive two off-policy and replay-compatible, regularized algorithms with post-violation semantics. Absorbing-state ends the decision process, so only surviving decisions pay policy KL, yielding AS-SAC. Virtual termination stops reward credit while the process continues, retaining ordinary discounted KL and yielding VT-MPO. To connect SDH with cumulative-cost CMDPs, we introduce violation-depth profiles. Under exponential-tail single-scale profiles, the SDH statistic determines cumulative cost; departures from this form mark where the connection breaks. Experiments validate both the method and this predicted scope. On the 90-muscle H2190 humanoid in Hyfydy, VT-MPO matches the EWA reference in peak gait realism, with its highest observed gait-match checkpoint at 21M environment steps versus 90M for EWA and markedly more stable training. On Safety Gymnasium, violation-depth profiles predict the regimes in which SDH achieves strong reward-violation trade-offs.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=kW5cd0hg4t"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">32</span>
+        </div>
+
+        <h5 class="paper-title">
+          Trust-region constraints govern improvement in a closed-loop protein engineering system
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Closed-loop design systems are now common in the experimental sciences, but few of them report which part of the loop produced the improvement.We report such a system to increase the activity of large serine recombinases (LSRs), which catalyze unidirectional, site-specific integration of multi-kilobase DNA cargoes, making them attractive for therapeutic gene insertion.Each round aligns a 3B-parameter masked protein language model to activity data with a learn-to-rank objective,draws multi-mutant variants by Gibbs MCMC under a soft trust region on mutational distance,assays them by in vitro transcription-translation, and returns the measurements.Across two campaigns, five rounds and 392 assayed designs, the best variant carries fivesubstitutions and reads 165 times parent activity on the same plate.We then ask which component was responsible.Of the components we tested, only the trust region has an effect we can measure:distance to the previously measured set is inversely correlated with activity, absorbing the whole difference between policy-update schedules.We report these findings as a template for future closed-loop campaigns.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=qlVkMAGPgi"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">31</span>
+        </div>
+
+        <h5 class="paper-title">
+          Does an Expert Teacher Help PPO? A Controlled Comparison of Training-Time Guidance Mechanisms on a Reactor Control Benchmark
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Facilities that consider reinforcement learning for control almost always possess a trusted classical controller, and a recurring proposal is to keep that controller in the training loop as a *teacher*. Many teacher designs exist, but no controlled experiment compares them: published evidence comes from different learners, tasks, and tuning budgets. We provide that experiment. On a nuclear-microreactor load-following benchmark, one on-policy learner (PPO) is trained under six guidance mechanisms and an unguided control, with a one-step nonlinear model-predictive controller (NMPC) as teacher and classical baseline. Every configuration receives its own hyperparameter search, then twenty evaluation seeds disjoint from the tuning seed, with best-checkpoint selection. Peak accuracy does not separate the methods; reliability separates them sharply, in an order given by one design property: how much of the teacher's behavior enters the learner's training data. Mechanisms that inject teacher actions into the on-policy gradient succeed on 0/20 (action blending) and 6/20 (warmstart) seeds, at or below the unguided control's 8/20, while mechanisms that confine the teacher to shaping states, rewards, or a base action succeed on 19/20 to 20/20 ($p \le 4.5\times10^{-4}$, Fisher exact, Holm-corrected). Guidance reduces the training-time constraint-violation rate by up to $17\times$ and eliminates overpower events; a residual configuration trains to teacher-level accuracy with *zero* violations in 200,600 episodes. Deployment-robustness ablations complete the accounting: under plant–model mismatch the learned policies degrade gracefully while the nominal-model teacher incurs errors one to two orders of magnitude larger; under sensor noise the relationship reverses; under process noise the two are comparable. Resampling our own seeds shows a 3-seed version of this study could have reported any unguided success rate from 0% to 100%, so small-seed comparisons of guidance methods are uninformative.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=WfoBPquvlS"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">26</span>
+        </div>
+
+        <h5 class="paper-title">
+          Uncertainty-Aware Kernels as a Practical Alternative to Moment Matching in Gaussian-Process MPC
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Analytic Moment Matching enables multistep uncertainty propagation in Gaussian-Process Model Predictive Control, but requires specialised derivations. We study an uncertainty-aware RBF kernel over Gaussian-distributed inputs as a practical alternative. For deterministic training inputs, we show that the resulting GP predictor has exactly the same posterior mean and marginal-likelihood objective as analytic Moment Matching. On Pendulum-v1 our method shows comparable performance with an $8\times$ wall-clock speedup and an $11\times$ lower memory footprint.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=mWaUfQMYK3"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">22</span>
+        </div>
+
+        <h5 class="paper-title">
+          Compositional Perturbation Planning with a Generative Structural Causal World Model
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Multi-gene intervention planning is critical to achieve a desired final cell state from either an embryonic stem or an intermediary cell state, while simultaneously modeling epistatic gene interactions. Current perturbation foundation models are not reliably trained to predict multi-gene perturbations and are conditional-mean estimators rather than intervention operators, so composing perturbations under a reinforcement learning (RL) policy queries the model off-distribution. Here, we introduce a generative structural causal world model in which transcription factor (TF) perturbations are modeled as latent interventions with support for multi-perturbations where any k-factor combination is solved in closed form rather than rolled out. On held-out TF overexpressions, the model matches or outperforms baselines on both single and combination perturbations, with cocktails of up to eight TFs, and predicts held-out gene-set epistasis. Epistatic interaction is explicitly learned through a low-rank interaction head trained on multi-TF perturbations by injecting set-dependent latent shifts through the causal graph, allowing the model to predict non-additive effects in held-out, experimentally validated TF combinations. Over this pre-trained world model, we built a policy to design perturbation cocktails that steer human embryonic stem cells (hESCs) to downstream differentiated fates including hematopoietic stem and progenitor cells (HSPC). We implement a goal-conditioned GFlowNet policy that proposes TF cocktails scored by the frozen world model's do-operator under an ensemble-pessimistic reward, penalizing cocktails whose value depends on simulator error. The policy generalizes to held-out fate signatures and recovers the driver TFs of a human embryonic stem cell to HSPC screen alongside other human fetal atlas annotated fates, matching model-predictive-control (MPC) search on broad recovery and exceeding it on top-rank metrics, while searching at roughly 36-fold lower inference cost and proposing far more diverse cocktails. Furthermore, since both the gene-sets that differentiate to the HSPC fate and the fate itself were held out in the world model and the policy, respectively, its zero-shot proposals for HSPC surface more validated answer-key drivers than the search and heuristic baselines at matched budget, nominating canonical blood-lineage regulators including LYL1, KLF1, and KLF2. Together, our work provides a framework for an exact, compositional causal world model allowing the implementation of combinatorial cell-fate design as an amortized, highly efficient policy.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=N2ewxvaRBT"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">20</span>
+        </div>
+
+        <h5 class="paper-title">
+          Chain-of-Molecules: Agentic Reasoning in Chemical Space for Constrained Molecular Optimization
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Chain-of-thought reasoning has enabled language models to solve complex problems through explicit intermediate steps. We ask whether this paradigm can be transferred from language into chemical space. We introduce \emph{Chain-of-Molecules} (CoM), a molecular-generation paradigm in which the intermediate reasoning states are molecules and the transitions between them are explicit chemical edits. In Agentic CoM, a symbolic environment executes valid edits, rejects infeasible ones, and returns the resulting molecule, allowing the model to adapt its subsequent actions, explore alternatives, backtrack, and commit. We evaluate CoM on constrained molecular optimization across five property objectives, requiring generated molecules to attain a requested property value while remaining within a specified graph-edit-distance interval. A controlled comparison of four generation formats isolates the effects of representing intermediate molecular states and interleaving generation with environment execution. Each format follows the same three-stage training pipeline: pretraining teaches molecular syntax and search, supervised finetuning grounds the true property objectives, and GRPO directly optimizes property and structural success. GRPO increases in-distribution joint success by a factor of $4.2$--$4.4$ across all formats. Agentic CoM combines the property success enabled by intermediate molecular states with the structural control provided by environment execution, reaching joint success rates of $0.547$ in distribution and $0.573$ on held-out interpolation targets while producing the most structurally diverse successful solutions across all three target regimes.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=QnpI3xso9j"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">16</span>
+        </div>
+
+        <h5 class="paper-title">
+          Better Than Clinician Care? A Stress Test of Off-Policy Evaluation in ICU Transfusion
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Artificial intelligence systems are increasingly proposed for treatment decisions in the intensive care unit (ICU), raising the question of how such systems should be evaluated.Treatment decisions by clinicians are assessed in randomized trials and large prospective studies. Decisions produced by learned policies are instead evaluated retrospectively, either by concordance with human experts or by off-policy evaluation (OPE). We therefore test whether \OPE{} supports a stable, credible, and clinically sensible choice among policies for red-blood-cell transfusion in the ICU.We treat clinical decision support as a reinforcement learning policy learned from offline data, and we score 21 learned, guideline-based, and planted control policies with six value estimators on two large databases under a fixed evaluation protocol.Our results show that the estimators do not agree. Every setting produces between three and six different winners, the median policy moves 8 to 12 rank positions across estimators, and a planted control takes the first rank 14 times out of 144. The strongest agreement occurs among importance-weighted estimators, but it is not independent evidence, since all four reuse the same likelihood ratios. Among the policies repeatedly ranked among the best, the database-specific median effective sample sizes are in the single digits despite thousands of held-out stays. Changing only the behaviour model changes the selected policy in 26 of 32 estimator--setting comparisons. Highly ranked policies can still recommend transfusion at normal hemoglobin levels. Retrospective evaluation therefore does not substantiate a claim that an offline policy improves on recorded clinician care.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=xPnfPKCrCW"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">13</span>
+        </div>
+
+        <h5 class="paper-title">
+          Reducing cross-sample prediction churn in scientific machine learning
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Scientific machine learning reports predictive performance. It does not report whether the same prediction would survive a different draw of training data. Across 9 chemistry benchmarks, two classifiers trained on independent bootstraps of the same training set agree on aggregate accuracy to within 1.3–4.2 percentage points but disagree on the class label of 8.0–21.8% of test molecules. We call this gap cross-sample prediction churn. The standard parameter-side techniques (deep ensembles, MC dropout, stochastic weight averaging) do not reduce this gap; two data-side methods do. The first is K-bootstrap bagging, which cuts the rate 40–54% on every dataset at no accuracy cost (K×-ERM compute). The second is twin bootstrap, our proposal: two networks trained jointly on independent bootstraps with a sym-KL consistency loss between their predictions, which at matched 2×-ERM compute reduces churn a further median 45% beyond bagging-K=2. Cross-sample prediction churn deserves a column alongside predictive performance in scientific-ML benchmark reports, because without it the parameter-side and data-side methods are indistinguishable on the metric they actually differ on.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=lSwOKOQDux"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">11</span>
+        </div>
+
+        <h5 class="paper-title">
+          Preference-Graph Policy Improvement for Noisy Biological Sequence Design
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            We introduce Preference-Graph Policy Improvement (PGPI), a method forlearning biological sequence edit policies directly from noisy localcomparisons. PGPI uses per-variant measurement uncertainties to constructa confidence-gated graph of local improvements, converts its edges intoweighted state--action transitions, and trains an iterative edit policy byconfidence-weighted behaviour cloning, without fitting an absolute scalarreward. The construction is motivated by two properties: localdifferencing is insensitive to smoothly varying absolute bias, and acalibrated confidence gate bounds the expected fraction of misdirectededges, subject to a graph-coverage trade-off.Across seven measured fitness landscapes and four noise models, PGPImatches or improves upon direct surrogate ascent most clearly in long,sparse, and noisy regimes, but direct surrogate ascent remains stronger on short, densely sampled landscapes.A controlled corruption study shows that robustness comes from learningover graph-supported transitions rather than from reward-freeness alone;component ablations identify the hard confidence gate and transitionrepresentation as the main source of the effect.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=kXYoaUp6UU"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">8</span>
+        </div>
+
+        <h5 class="paper-title">
+          ICMAPE: In-Context Multiagent Pure Exploration
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            In some multi-agent systems, the quantity to be optimized is not an externally specified reward but the information acquired about unknown properties of the environment as done in active sequential hypothesis testing (ASHT) problems. However, the ASHT literature tends to focus on finite single-agent problems with well-specified models, while there is currently a gap for practical multi-agent methods that can perform active sequential testing. We fill this gap with ICMAPE, a Bayesian learning-based framework for decentralized multi-agent pure-exploration driven by inference objectives. ICMAPE converts the fixed-confidence identification objective into a reward derived from inference confidence, so that standard reinforcement learning machinery can be applied to decentralized pure exploration. It jointly learns a centralized neural inference network that estimates a posterior distribution over hypotheses from global trajectory data, and decentralized policies that select actions from local observation histories and learn when to stop collecting data once the target confidence is reached.On two synthetic benchmarks and a Maryland nitrate concentration monitoring task based on real-world data, ICMAPE-TD3 achieves target accuracy with fewer exploration steps.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=eEgKH8QfOo"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">6</span>
+        </div>
+
+        <h5 class="paper-title">
+          Bayesian optimization with amortized search-space reparametrization for precision dosing
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            Personalizing drug dosing is a problem of sample-efficient optimization: candidate regimens are tried one at a time on a patient, and evaluations are expensive and potentially risky. Here, we use a pharmacokinetic/pharmacodynamic (PK/PD) model of thedrug, a mechanistic model calibrated on population data with quantified parameter uncertainty, to reparameterize thissearch. A dosing network is trained offline against the model, amortizing the map from patient PK/PD parameters to the regimen predicted to be optimal, and online Bayesian optimization then searches over this learned, low-dimensional representation rather than over raw dosages. Because the network's image is a subspace of pharmacologically coherent regimens, the search remains sensible by construction, improving safety and convergence speed. Unlike model-informed precision dosing, ourmethod admits heterogeneous feedback (symptom scores, preferences, wearables), and applies toany drugs for chronic disease with a PK/PD model where no real-time biomarkers can be measured that provide a comprehensive measure of patients’ state, and disease management implies taking into account patient reported outcomes. On an in-silico population of Parkinson's patients under Levodopa treatment, itconverges to better regimens with fewer trials than baselines optimization methods.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=xgrkRvAtG0"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card">
+        <div class="paper-topline">
+          <span class="paper-badge poster">Poster</span>
+          <span class="paper-number">3</span>
+        </div>
+
+        <h5 class="paper-title">
+          Between Life and Death: Examining Failure Modes of Sparse Reward Designs in Healthcare RL
+        </h5>
+
+        <p class="paper-authors">
+          <strong>Authors:</strong> To be added from OpenReview
+        </p>
+
+        <details class="paper-abstract">
+          <summary>Read abstract</summary>
+          <p>
+            In reinforcement learning (RL) for healthcare, reward functions often encode clinical endpoints like survival and death. This results in a sparse reward structure with non-zero rewards only at terminal transitions. However, the exact reward magnitude and combination of survival rewards and death penalties vary across studies, with the implicit assumption that these choices are interchangeable. In this work, we theoretically and empirically examine three common sparse reward designs: survival-only, death-only, and mixed. We prove that, under the assumptions of terminal-only rewards, guaranteed absorption, and no discounting, the corresponding value functions of the three designs have an equivalence relationship and lead to the same optimal policy; while breaking any of these conditions can break the equivalence in consequential ways. On simulated environments, we verify the theoretical results and demonstrate how relaxing these assumptions affect the equivalence relationship. Finally, we consider a healthcare domain of sepsis treatment based on real-world clinical data, in which all theoretical assumptions are violated. Overall, we find that the death-only reward design consistently underperforms and leads to indecisive policies, while survival-only and mixed rewards perform similarly with differences arising from how they handle trap states and interact with intermediate rewards and discounting. Our work provides the first systematic characterization of these failure modes in healthcare RL, offering theoretically grounded guidance for practitioners on reward design choices.
+          </p>
+        </details>
+
+        <div class="paper-actions">
+          <a class="paper-link"
+             href="https://openreview.net/forum?id=777rFjNcSl"
+             target="_blank" rel="noopener noreferrer">
+            Read on OpenReview ↗
+          </a>
+        </div>
+      </article>
     </div>
 
   </div>
