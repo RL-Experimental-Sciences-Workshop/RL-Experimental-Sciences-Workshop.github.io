@@ -481,7 +481,60 @@ header h1{font-size:2rem}
   }
 }
 	
+/* Program Committee */
+#program-committee {
+  padding: 3rem 0;
+}
 
+#program-committee h2 {
+  margin-bottom: 2rem;
+}
+
+.committee-group {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border, rgba(128, 128, 128, 0.2));
+}
+
+.committee-group h3 {
+  margin: 0 0 1.25rem;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.committee-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.committee-list li {
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .committee-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .committee-group {
+    padding: 1rem;
+  }
+
+  .committee-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
 </style>
 </head>
 
@@ -915,7 +968,61 @@ This workshop brings together researchers from reinforcement learning and experi
 </div>
 </section>
 
+<section id="program-committee">
+  <h2>Program Committee</h2>
 
+  <div class="committee-group">
+    <h3>Area Chairs</h3>
+    <ul class="committee-list">
+      <li>Tristan Fauvel</li>
+      <li>Debabrota Basu</li>
+      <li>Audrey Durand</li>
+      <li>Ronald Ortner</li>
+      <li>M. Sadegh Talebi</li>
+    </ul>
+  </div>
+
+  <div class="committee-group">
+    <h3>Reviewers</h3>
+    <ul class="committee-list">
+      <li>Christos Dimitrakakis</li>
+      <li>Elena Smirnova</li>
+      <li>Hippolyte Bourel</li>
+      <li>Yi-Shan Wu</li>
+      <li>Liam Schramm</li>
+      <li>Federico Pavone</li>
+      <li>Alassane Bah</li>
+      <li>Erinn M. Grigsby</li>
+      <li>Junya Honda</li>
+      <li>Mandicou Ba</li>
+      <li>Régis Sabbadin</li>
+      <li>Oliver Mortensen</li>
+      <li>Tristan Fauvel</li>
+      <li>Roger Creus Castanyer</li>
+      <li>Adrienne Tuynman</li>
+      <li>Debabrota Basu</li>
+      <li>Hyeonah Kim</li>
+      <li>Alexandre Larouche</li>
+      <li>Jiahui Xin</li>
+      <li>Moustapha MBAYE</li>
+      <li>Krishna Chaitanya Balusu</li>
+      <li>M. Sadegh Talebi</li>
+      <li>Samba diaw</li>
+      <li>Waris Radji</li>
+      <li>Jorge Ramirez-Ruiz</li>
+      <li>Udvas Das</li>
+      <li>Odalric-Ambrym Maillard</li>
+      <li>Srinivas Harish</li>
+      <li>Adrien Prevost</li>
+      <li>Simon Hirlaender</li>
+      <li>Dorian Baudry</li>
+      <li>Ronald Ortner</li>
+      <li>Nina Deliu</li>
+      <li>Emmanuelle Claeys</li>
+      <li>Caro Strickland</li>
+    </ul>
+  </div>
+</section>
 
 	
 <section id="accepted-papers">
